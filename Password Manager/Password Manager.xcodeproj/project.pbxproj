@@ -8,6 +8,9 @@
 
 /* Begin PBXFileReference section */
 		3202261C171CEA4000B8B2E3 /* libPassword Manager.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "libPassword Manager.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32022633171CF74300B8B2E3 /* authentication */ = {isa = PBXFileReference; lastKnownFileType = folder; path = authentication; sourceTree = "<group>"; };
+		32022634171CF74300B8B2E3 /* configuration */ = {isa = PBXFileReference; lastKnownFileType = folder; path = configuration; sourceTree = "<group>"; };
+		32022635171CF74300B8B2E3 /* crypto */ = {isa = PBXFileReference; lastKnownFileType = folder; path = crypto; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,9 +27,14 @@
 		32022613171CEA4000B8B2E3 = {
 			isa = PBXGroup;
 			children = (
+				32022633171CF74300B8B2E3 /* authentication */,
+				32022634171CF74300B8B2E3 /* configuration */,
+				32022635171CF74300B8B2E3 /* crypto */,
 				3202261D171CEA4000B8B2E3 /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		3202261D171CEA4000B8B2E3 /* Products */ = {
 			isa = PBXGroup;
@@ -166,7 +174,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
+				GCC_VERSION = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$SRCROOT/**";
 			};
 			name = Debug;
 		};
@@ -174,7 +184,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
+				GCC_VERSION = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$SRCROOT/**";
 			};
 			name = Release;
 		};
